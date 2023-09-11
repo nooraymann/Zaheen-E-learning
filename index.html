@@ -13,17 +13,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Inter:wght@400;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./CSS/styles.css">
-
-
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 fixed-top  ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#header">
-        <img src="./Images/png-logo 1.png">
+        <img src="./Images/png-logo 1.png" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,11 +66,12 @@
       </div>
     </div>
   </nav>
+
   <section id="header">
-    <div id="myCarousel" class="carousel slide p-2" data-bs-ride="carousel">
+    <div id="header-carousel" class="carousel slide p-2" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item w-100 vh-100 active">
-          <img src="./Images/bg.jpeg" class="w-100" alt="Slide 1">
+          <img src="./Images/bg.jpeg" class="w-100" alt="header background ">
           <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
             <h2 class="headTitle mb-5">Start your learning journey with us</h2>
             <h5 class="headSubtitle mb-5">Grab the chances and invest in your future</h5>
@@ -78,20 +79,21 @@
           </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true">
-          <img src="./Images/prev-white.png" alt="">
+      <a class="carousel-control-prev" href="#header-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon d-none d-md-block" aria-hidden="true">
+          <img src="./Images/prev-white.png" alt="previous">
         </span>
         <span class="visually-hidden">Previous</span>
       </a>
-      <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true">
-          <img src="./Images/next-white.png" alt="">
+      <a class="carousel-control-next" href="#header-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon d-none d-md-block " aria-hidden="true">
+          <img src="./Images/next-white.png" alt="next">
         </span>
         <span class="visually-hidden">Next</span>
       </a>
     </div>
   </section>
+
   <section id="top-subjects " class="mt-5 text-center">
     <h2 class="section-title">Top Subjects</h2>
     <div class="container mt-4">
@@ -128,28 +130,33 @@
   </section>
 
   <section id="courses-section " class="bg-dark mt-5 mb-5 pb-5 pt-5">
-
-    <div class="container-fluid ">  
-     
-        <div class="section-header ">
+    <div class="container-fluid ">
+      <div class="section-header ">
+      </div>
+      <div id="course-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="container ">
           <div class="centered-title">
             <h2 class="section-title text-white text-center">Find Your Perfect Course</h2>
             <div class="course-options">
-              <div class="square"></div>
-              <div class="square"></div>
-              <div class="square"></div>
-              <div class="square"></div>
-              <div class="viewAll-rectangle ">
+              <div class="carousel-indicators ">
+                <button type="button" data-bs-target="#course-carousel" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#course-carousel" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#course-carousel" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#course-carousel" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+              </div>
+              <div class="viewAll-rectangle  ">
                 <span class="viewAll-text">VIEW ALL </span>
                 <div class="double-arrows-icon"><i class="fa-solid fa-angles-right"></i></div>
               </div>
             </div>
           </div>
-        </div>
-      <div id="course-carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="container ">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item  active">
               <div class="row ">
                 <div class="item col-md-3">
                   <div class="square-carousel-item ">
@@ -157,7 +164,7 @@
                     <h4 class="course-title">Science and Machine Learning Bootcamp</h4>
                     <div class="row justify-content-between">
                       <div class="col-6 pe-0">
-                        <img src="./Images/person1.png" alt="Icon 1" class="icon">
+                        <img src="./Images/person1.png" alt="person" class="icon">
                         <span class="text ">Ahmad Kamel</span>
                       </div>
                       <div class="col-6 p-0">
@@ -167,7 +174,7 @@
                         <img src="./Images/star.png" alt="Rate Icon" class="icon">
                         <span class="text">4.5</span>
                       </div>
-                      
+
                     </div>
                     <div class="row justify-content-end">
                       <div class="col-md-5  ">
@@ -186,7 +193,7 @@
                     <h4 class="course-title">Science and Machine Learning Bootcamp</h4>
                     <div class="row justify-content-between">
                       <div class="col-6 pe-0">
-                        <img src="./Images/person2.png" alt="Icon 1" class="icon">
+                        <img src="./Images/person2.png" alt="person" class="icon">
                         <span class="text ">Sama Kamel</span>
                       </div>
                       <div class="col-6 p-0">
@@ -196,7 +203,7 @@
                         <img src="./Images/star.png" alt="Rate Icon" class="icon">
                         <span class="text">4.5</span>
                       </div>
-                      
+
                     </div>
                     <div class="row justify-content-end">
                       <div class="col-md-5  ">
@@ -217,7 +224,7 @@
                     <h4 class="course-title">Science and Machine Learning Bootcamp</h4>
                     <div class="row justify-content-between">
                       <div class="col-6 pe-0">
-                        <img src="./Images/person2.png" alt="Icon 1" class="icon">
+                        <img src="./Images/person2.png" alt="person" class="icon">
                         <span class="text ">Sama Kamel</span>
                       </div>
                       <div class="col-6 p-0">
@@ -227,7 +234,7 @@
                         <img src="./Images/star.png" alt="Rate Icon" class="icon">
                         <span class="text">4.5</span>
                       </div>
-                      
+
                     </div>
                     <div class="row justify-content-end">
                       <div class="col-md-5  ">
@@ -248,7 +255,7 @@
                     <h4 class="course-title">Science and Machine Learning Bootcamp</h4>
                     <div class="row justify-content-between">
                       <div class="col-6 pe-0">
-                        <img src="./Images/person1.png" alt="Icon 1" class="icon">
+                        <img src="./Images/person1.png" alt="person" class="icon">
                         <span class="text ">Ahmad Kamel</span>
                       </div>
                       <div class="col-6 p-0">
@@ -258,7 +265,382 @@
                         <img src="./Images/star.png" alt="Rate Icon" class="icon">
                         <span class="text">4.5</span>
                       </div>
-                      
+
+                    </div>
+                    <div class="row justify-content-end">
+                      <div class="col-md-5  ">
+                        <span class="price  ">25.00 SAR</span>
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row ">
+                <div class="item col-md-3">
+                  <div class="square-carousel-item ">
+                    <img src="./Images/course1.jpg" alt="Course 1 image" class="course-image">
+                    <h4 class="course-title">Science and Machine Learning Bootcamp</h4>
+                    <div class="row justify-content-between">
+                      <div class="col-6 pe-0">
+                        <img src="./Images/person1.png" alt="person" class="icon">
+                        <span class="text ">Ahmad Kamel</span>
+                      </div>
+                      <div class="col-6 p-0">
+                        <img src="./Images/clock.png" alt="Clock Icon" class="icon">
+                        <span class="text me-2">4 monts</span>
+
+                        <img src="./Images/star.png" alt="Rate Icon" class="icon">
+                        <span class="text">4.5</span>
+                      </div>
+
+                    </div>
+                    <div class="row justify-content-end">
+                      <div class="col-md-5  ">
+                        <span class="price  ">25.00 SAR</span>
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+
+                  </div>
+                </div>
+                <div class=" item col-md-3">
+                  <div class="square-carousel-item ">
+                    <img src="./Images/course1.jpg" alt="Course 1 image" class="course-image">
+                    <h4 class="course-title">Science and Machine Learning Bootcamp</h4>
+                    <div class="row justify-content-between">
+                      <div class="col-6 pe-0">
+                        <img src="./Images/person2.png" alt="person" class="icon">
+                        <span class="text ">Sama Kamel</span>
+                      </div>
+                      <div class="col-6 p-0">
+                        <img src="./Images/clock.png" alt="Clock Icon" class="icon">
+                        <span class="text me-2">4 monts</span>
+
+                        <img src="./Images/star.png" alt="Rate Icon" class="icon">
+                        <span class="text">4.5</span>
+                      </div>
+
+                    </div>
+                    <div class="row justify-content-end">
+                      <div class="col-md-5  ">
+                        <span class="price  ">25.00 SAR</span>
+                      </div>
+
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="text-center">
+                        <button class="add-to-cart-button">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class=" item col-md-3">
+                  <div class="square-carousel-item ">
+                    <img src="./Images/course1.jpg" alt="Course 1 image" class="course-image">
+                    <h4 class="course-title">Science and Machine Learning Bootcamp</h4>
+                    <div class="row justify-content-between">
+                      <div class="col-6 pe-0">
+                        <img src="./Images/person2.png" alt="person" class="icon">
+                        <span class="text ">Sama Kamel</span>
+                      </div>
+                      <div class="col-6 p-0">
+                        <img src="./Images/clock.png" alt="Clock Icon" class="icon">
+                        <span class="text me-2">4 monts</span>
+
+                        <img src="./Images/star.png" alt="Rate Icon" class="icon">
+                        <span class="text">4.5</span>
+                      </div>
+
+                    </div>
+                    <div class="row justify-content-end">
+                      <div class="col-md-5  ">
+                        <span class="price  ">25.00 SAR</span>
+                      </div>
+
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="text-center">
+                        <button class="add-to-cart-button">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item col-md-3">
+                  <div class="square-carousel-item ">
+                    <img src="./Images/course1.jpg" alt="Course 1 image" class="course-image">
+                    <h4 class="course-title">Science and Machine Learning Bootcamp</h4>
+                    <div class="row justify-content-between">
+                      <div class="col-6 pe-0">
+                        <img src="./Images/person1.png" alt="person" class="icon">
+                        <span class="text ">Ahmad Kamel</span>
+                      </div>
+                      <div class="col-6 p-0">
+                        <img src="./Images/clock.png" alt="Clock Icon" class="icon">
+                        <span class="text me-2">4 monts</span>
+
+                        <img src="./Images/star.png" alt="Rate Icon" class="icon">
+                        <span class="text">4.5</span>
+                      </div>
+
+                    </div>
+                    <div class="row justify-content-end">
+                      <div class="col-md-5  ">
+                        <span class="price  ">25.00 SAR</span>
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="row ">
+                <div class="item col-md-3">
+                  <div class="square-carousel-item ">
+                    <img src="./Images/course1.jpg" alt="Course 1 image" class="course-image">
+                    <h4 class="course-title">Science and Machine Learning Bootcamp</h4>
+                    <div class="row justify-content-between">
+                      <div class="col-6 pe-0">
+                        <img src="./Images/person1.png" alt="person" class="icon">
+                        <span class="text ">Ahmad Kamel</span>
+                      </div>
+                      <div class="col-6 p-0">
+                        <img src="./Images/clock.png" alt="Clock Icon" class="icon">
+                        <span class="text me-2">4 monts</span>
+
+                        <img src="./Images/star.png" alt="Rate Icon" class="icon">
+                        <span class="text">4.5</span>
+                      </div>
+
+                    </div>
+                    <div class="row justify-content-end">
+                      <div class="col-md-5  ">
+                        <span class="price  ">25.00 SAR</span>
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+
+                  </div>
+                </div>
+                <div class=" item col-md-3">
+                  <div class="square-carousel-item ">
+                    <img src="./Images/course1.jpg" alt="Course 1 image" class="course-image">
+                    <h4 class="course-title">Science and Machine Learning Bootcamp</h4>
+                    <div class="row justify-content-between">
+                      <div class="col-6 pe-0">
+                        <img src="./Images/person2.png" alt="person" class="icon">
+                        <span class="text ">Sama Kamel</span>
+                      </div>
+                      <div class="col-6 p-0">
+                        <img src="./Images/clock.png" alt="Clock Icon" class="icon">
+                        <span class="text me-2">4 monts</span>
+
+                        <img src="./Images/star.png" alt="Rate Icon" class="icon">
+                        <span class="text">4.5</span>
+                      </div>
+
+                    </div>
+                    <div class="row justify-content-end">
+                      <div class="col-md-5  ">
+                        <span class="price  ">25.00 SAR</span>
+                      </div>
+
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="text-center">
+                        <button class="add-to-cart-button">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class=" item col-md-3">
+                  <div class="square-carousel-item ">
+                    <img src="./Images/course1.jpg" alt="Course 1 image" class="course-image">
+                    <h4 class="course-title">Science and Machine Learning Bootcamp</h4>
+                    <div class="row justify-content-between">
+                      <div class="col-6 pe-0">
+                        <img src="./Images/person2.png" alt="person" class="icon">
+                        <span class="text ">Sama Kamel</span>
+                      </div>
+                      <div class="col-6 p-0">
+                        <img src="./Images/clock.png" alt="Clock Icon" class="icon">
+                        <span class="text me-2">4 monts</span>
+
+                        <img src="./Images/star.png" alt="Rate Icon" class="icon">
+                        <span class="text">4.5</span>
+                      </div>
+
+                    </div>
+                    <div class="row justify-content-end">
+                      <div class="col-md-5  ">
+                        <span class="price  ">25.00 SAR</span>
+                      </div>
+
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="text-center">
+                        <button class="add-to-cart-button">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item col-md-3">
+                  <div class="square-carousel-item ">
+                    <img src="./Images/course1.jpg" alt="Course 1 image" class="course-image">
+                    <h4 class="course-title">Science and Machine Learning Bootcamp</h4>
+                    <div class="row justify-content-between">
+                      <div class="col-6 pe-0">
+                        <img src="./Images/person1.png" alt="person" class="icon">
+                        <span class="text ">Ahmad Kamel</span>
+                      </div>
+                      <div class="col-6 p-0">
+                        <img src="./Images/clock.png" alt="Clock Icon" class="icon">
+                        <span class="text me-2">4 monts</span>
+
+                        <img src="./Images/star.png" alt="Rate Icon" class="icon">
+                        <span class="text">4.5</span>
+                      </div>
+
+                    </div>
+                    <div class="row justify-content-end">
+                      <div class="col-md-5  ">
+                        <span class="price  ">25.00 SAR</span>
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="carousel-item">
+              <div class="row ">
+                <div class="item col-md-3">
+                  <div class="square-carousel-item ">
+                    <img src="./Images/course1.jpg" alt="Course 1 image" class="course-image">
+                    <h4 class="course-title">Science and Machine Learning Bootcamp</h4>
+                    <div class="row justify-content-between">
+                      <div class="col-6 pe-0">
+                        <img src="./Images/person1.png" alt="person" class="icon">
+                        <span class="text ">Ahmad Kamel</span>
+                      </div>
+                      <div class="col-6 p-0">
+                        <img src="./Images/clock.png" alt="Clock Icon" class="icon">
+                        <span class="text me-2">4 monts</span>
+
+                        <img src="./Images/star.png" alt="Rate Icon" class="icon">
+                        <span class="text">4.5</span>
+                      </div>
+
+                    </div>
+                    <div class="row justify-content-end">
+                      <div class="col-md-5  ">
+                        <span class="price  ">25.00 SAR</span>
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+
+                  </div>
+                </div>
+                <div class=" item col-md-3">
+                  <div class="square-carousel-item ">
+                    <img src="./Images/course1.jpg" alt="Course 1 image" class="course-image">
+                    <h4 class="course-title">Science and Machine Learning Bootcamp</h4>
+                    <div class="row justify-content-between">
+                      <div class="col-6 pe-0">
+                        <img src="./Images/person2.png" alt="person" class="icon">
+                        <span class="text ">Sama Kamel</span>
+                      </div>
+                      <div class="col-6 p-0">
+                        <img src="./Images/clock.png" alt="Clock Icon" class="icon">
+                        <span class="text me-2">4 monts</span>
+
+                        <img src="./Images/star.png" alt="Rate Icon" class="icon">
+                        <span class="text">4.5</span>
+                      </div>
+
+                    </div>
+                    <div class="row justify-content-end">
+                      <div class="col-md-5  ">
+                        <span class="price  ">25.00 SAR</span>
+                      </div>
+
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="text-center">
+                        <button class="add-to-cart-button">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class=" item col-md-3">
+                  <div class="square-carousel-item ">
+                    <img src="./Images/course1.jpg" alt="Course 1 image" class="course image">
+                    <h4 class="course-title">Science and Machine Learning Bootcamp</h4>
+                    <div class="row justify-content-between">
+                      <div class="col-6 pe-0">
+                        <img src="./Images/person2.png" alt="person" class="icon">
+                        <span class="text ">Sama Kamel</span>
+                      </div>
+                      <div class="col-6 p-0">
+                        <img src="./Images/clock.png" alt="Clock Icon" class="icon">
+                        <span class="text me-2">4 monts</span>
+
+                        <img src="./Images/star.png" alt="Rate Icon" class="icon">
+                        <span class="text">4.5</span>
+                      </div>
+
+                    </div>
+                    <div class="row justify-content-end">
+                      <div class="col-md-5  ">
+                        <span class="price  ">25.00 SAR</span>
+                      </div>
+
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="text-center">
+                        <button class="add-to-cart-button">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item col-md-3">
+                  <div class="square-carousel-item ">
+                    <img src="./Images/course1.jpg" alt="Course 1 image" class="course image">
+                    <h4 class="course-title">Science and Machine Learning Bootcamp</h4>
+                    <div class="row justify-content-between">
+                      <div class="col-6 pe-0">
+                        <img src="./Images/person1.png" alt="person" class="icon">
+                        <span class="text ">Ahmad Kamel</span>
+                      </div>
+                      <div class="col-6 p-0">
+                        <img src="./Images/clock.png" alt="Clock Icon" class="icon">
+                        <span class="text me-2">4 monts</span>
+
+                        <img src="./Images/star.png" alt="Rate Icon" class="icon">
+                        <span class="text">4.5</span>
+                      </div>
+
                     </div>
                     <div class="row justify-content-end">
                       <div class="col-md-5  ">
@@ -277,240 +659,266 @@
         </div>
 
         <a class="carousel-control-prev" href="#course-carousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true">
-            <img src="./Images/prev-transparent.png" alt="">
+          <span class="carousel-control-prev-icon d-none d-md-block" aria-hidden="true">
+            <img src="./Images/prev-transparent.png" alt="previous">
           </span>
           <span class="visually-hidden">Previous</span>
         </a>
         <a class="carousel-control-next" href="#course-carousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true">
-            <img src="./Images/next-transparent.png" alt="">
+          <span class="carousel-control-next-icon d-none d-md-block" aria-hidden="true">
+            <img src="./Images/next-transparent.png" alt="next">
           </span>
           <span class="visually-hidden">Next</span>
         </a>
       </div>
-    
   </section>
 
-
-<section id="instuctors">
-  <div id="instructoror-carousel" class="carousel slide"  data-interval="false">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#instructoror-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#instructoror-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-
-    </div>
-    <div class="carousel-inner">
-     <!-- Slide 1 -->
-     <div class="carousel-item active">
-     
-       <div class="container">
-        <div class="row">
-          <div class="col-md-6 mb-5 ">
-            <div class="slide-uncolored" >
-            <h2 class="first-slide-title">Instructors who
-              have achieved the
-              career you want.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+  <section id="instuctors">
+    <div id="instructoror-carousel" class="carousel slide" data-interval="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#instructoror-carousel" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#instructoror-carousel" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 mb-5 ">
+                <div class="slide-uncolored">
+                  <h2 class="first-slide-title">Instructors who
+                    have achieved the
+                    career you want.</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+              </div>
+              <div class="col-md-6 mb-5">
+                <div class="slide-colored border-bottom-left-radius">
+                  <div class="image-container">
+                    <img src="./Images/instructor1.png" alt="Leslie Dell">
+                  </div>
+                  <div class="text-container">
+                    <h3 class="instuctor-title">Leslie Dell</h3>
+                    <h4 class="instuctor-subtitle">Developer and Lead Instructor</h4>
+                    <p>I'm Angela, I'm a developer with a passion for teaching. I'm the lead instructor at the London
+                      App Brewery, London's leading Programming Bootcamp. I've helped hundreds of thousands of students
+                      learn to code and change their lives by becoming a developer. I've been invited by companies such
+                      as Twitter, Facebook and Google to teach their employees.</p>
+                    <p>My first foray into programming was when I was just 12 years old, wanting to build my own Space
+                      Invader game. Since then, I've made hundred of websites, apps and games. But most importantly, I
+                      realised that my greatest passion is teaching.</p>
+                    <p>I spend most of my time researching how to make learning to code fun and make hard concepts easy
+                      to understand. I apply everything I discover into my bootcamp courses. In my courses, you'll find
+                      lots of geeky humour but also lots of explanations and animations to make sure everything is easy
+                      to understand.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-6 mb-5">
-            <div class="slide-colored border-bottom-left-radius" >
-              <div class="image-container">
-                <img src="./Images/instructor1.png" alt="Leslie Dell">
-              </div>
-              <div class="text-container">
-                <h3 class="instuctor-title">Leslie Dell</h3>
-                <h4 class="instuctor-subtitle">Developer and Lead Instructor</h4>
-                <p>I'm Angela, I'm a developer with a passion for teaching. I'm the lead instructor at the London App Brewery, London's leading Programming Bootcamp. I've helped hundreds of thousands of students learn to code and change their lives by becoming a developer. I've been invited by companies such as Twitter, Facebook and Google to teach their employees.</p>
-                <p>My first foray into programming was when I was just 12 years old, wanting to build my own Space Invader game. Since then, I've made hundred of websites, apps and games. But most importantly, I realised that my greatest passion is teaching.</p>
-                <p>I spend most of my time researching how to make learning to code fun and make hard concepts easy to understand. I apply everything I discover into my bootcamp courses. In my courses, you'll find lots of geeky humour but also lots of explanations and animations to make sure everything is easy to understand.</p>
-              </div>
-            </div>
-          </div>
+
         </div>
-       </div>
-      
-    </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 mb-5">
+                <div class="slide-colored border-bottom-right-radius">
+                  <div class="image-container">
+                    <img src="./Images/instructor2.png" alt="Eid Wily">
+                  </div>
+                  <div class="text-container">
+                    <h3 class="instuctor-title">Eid Wily</h3>
+                    <h4 class="instuctor-subtitle">Developer and Lead Instructor</h4>
+                    <p>I'm Angela, I'm a developer with a passion for teaching. I'm the lead instructor at the London
+                      App Brewery, London's leading Programming Bootcamp. I've helped hundreds of thousands of students
+                      learn to code and change their lives by becoming a developer. I've been invited by companies such
+                      as Twitter, Facebook and Google to teach their employees.</p>
+                    <p>My first foray into programming was when I was just 12 years old, wanting to build my own Space
+                      Invader game. Since then, I've made hundred of websites, apps and games. But most importantly, I
+                      realised that my greatest passion is teaching.</p>
+                    <p>I spend most of my time researching how to make learning to code fun and make hard concepts easy
+                      to understand. I apply everything I discover into my bootcamp courses. In my courses, you'll find
+                      lots of geeky humour but also lots of explanations and animations to make sure everything is easy
+                      to understand.</p>
+                  </div>
+                </div>
 
-    <!-- Slide 2 -->
-    <div class="carousel-item">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 mb-5">
-            <div class="slide-colored border-bottom-right-radius" >
-              <div class="image-container">
-                <img src="./Images/instructor2.png" alt="Eid Wily">
               </div>
-              <div class="text-container">
-                <h3 class="instuctor-title">Eid Wily</h3>
-                <h4 class="instuctor-subtitle">Developer and Lead Instructor</h4>
-                <p>I'm Angela, I'm a developer with a passion for teaching. I'm the lead instructor at the London App Brewery, London's leading Programming Bootcamp. I've helped hundreds of thousands of students learn to code and change their lives by becoming a developer. I've been invited by companies such as Twitter, Facebook and Google to teach their employees.</p>
-                <p>My first foray into programming was when I was just 12 years old, wanting to build my own Space Invader game. Since then, I've made hundred of websites, apps and games. But most importantly, I realised that my greatest passion is teaching.</p>
-                <p>I spend most of my time researching how to make learning to code fun and make hard concepts easy to understand. I apply everything I discover into my bootcamp courses. In my courses, you'll find lots of geeky humour but also lots of explanations and animations to make sure everything is easy to understand.</p>
+              <div class="col-md-6 mb-5">
+                <div class="slide-colored border-bottom-left-radius">
+                  <div class="image-container">
+                    <img src="./Images/instructor1.png" alt="Eid Wily">
+                  </div>
+                  <div class="text-container">
+                    <h3 class="instuctor-title">Eid Wily</h3>
+                    <h4 class="instuctor-subtitle">Developer and Lead Instructor</h4>
+                    <p>I'm Angela, I'm a developer with a passion for teaching. I'm the lead instructor at the London
+                      App Brewery, London's leading Programming Bootcamp. I've helped hundreds of thousands of students
+                      learn to code and change their lives by becoming a developer. I've been invited by companies such
+                      as Twitter, Facebook and Google to teach their employees.</p>
+                    <p>My first foray into programming was when I was just 12 years old, wanting to build my own Space
+                      Invader game. Since then, I've made hundred of websites, apps and games. But most importantly, I
+                      realised that my greatest passion is teaching.</p>
+                    <p>I spend most of my time researching how to make learning to code fun and make hard concepts easy
+                      to understand. I apply everything I discover into my bootcamp courses. In my courses, you'll find
+                      lots of geeky humour but also lots of explanations and animations to make sure everything is easy
+                      to understand.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-         
+
+
         </div>
-        <div class="col-md-6 mb-5">
-          <div class="slide-colored border-bottom-left-radius" >
-            <div class="image-container">
-              <img src="./Images/instructor1.png" alt="Eid Wily">
+      </div>
+    </div>
+    <div class="container-fluid mt-md-5 mb-md-5 ">
+      <div class="row bordered-section">
+        <div class="col-md-6 ps-0">
+          <img src="./Images/instructor.png" class="w-100" alt="Instructor Image">
+        </div>
+        <div class="col-md-6">
+          <div class="instructor-content">
+            <h2 class="section-title">Become an Instructor</h2>
+            <p>Instructors from around the world teach millions of students on Udemy. We provide the tools and skills to
+              teach what you love.</p>
+            <p>Become an instructor and change lives — including your own.</p>
+            <div class="button-container text-center mt-5 ">
+              <a href="#" class=" instructor-button">Get Started</a>
             </div>
-            <div class="text-container">
-              <h3 class="instuctor-title">Eid Wily</h3>
-              <h4 class="instuctor-subtitle">Developer and Lead Instructor</h4>
-              <p>I'm Angela, I'm a developer with a passion for teaching. I'm the lead instructor at the London App Brewery, London's leading Programming Bootcamp. I've helped hundreds of thousands of students learn to code and change their lives by becoming a developer. I've been invited by companies such as Twitter, Facebook and Google to teach their employees.</p>
-              <p>My first foray into programming was when I was just 12 years old, wanting to build my own Space Invader game. Since then, I've made hundred of websites, apps and games. But most importantly, I realised that my greatest passion is teaching.</p>
-              <p>I spend most of my time researching how to make learning to code fun and make hard concepts easy to understand. I apply everything I discover into my bootcamp courses. In my courses, you'll find lots of geeky humour but also lots of explanations and animations to make sure everything is easy to understand.</p>
-            </div>
+
           </div>
         </div>
       </div>
     </div>
- 
-   
-    </div>
-  
-  </div>
-</div>
+  </section>
 
-<div class="container-fluid mt-md-5 mb-md-5 ">
-  <div class="row bordered-section">
-    <div class="col-md-6 ps-0">
-      <img src="./Images/instructor.png" class="w-100"alt="Instructor Image">
-    </div>
-    <div class="col-md-6">
-      <div class="instructor-content">
-        <h2 class="section-title">Become an Instructor</h2>
-        <p>Instructors from around the world teach millions of students on Udemy. We provide the tools and skills to teach what you love.</p>
-        <p>Become an instructor and change lives — including your own.</p>
-        <div class="button-container text-center mt-5 ">
-          <a href="#" class=" instructor-button">Get Started</a>
-        </div>
-     
-      </div>
-    </div>
-  </div>
-</div>
-</section>
- 
   <section id="students-section">
-   
-      <div class="row justify-content-center ">
-        <div class="col-md-4">
-          <div class="rectangle">
-            <img src="./Images/rounded-image.png" alt="Student review" class="rounded-image">
-            <div class="student-info">
-              <h4 class="student-title">Muhammad R.</h4>
-            <div class="rating">
-              <span class="star"><i class="fa-solid fa-star"></i></span>
-              <span class="star"><i class="fa-solid fa-star"></i></span>
-              <span class="star"><i class="fa-solid fa-star"></i></span>
-              <span class="star"><i class="fa-solid fa-star"></i></span>
-              <span class="star pe-1"><i class="fa-regular fa-star-half-stroke"></i></span>
-              <span class="rating-date">3 weeks ago</span>
-            </div>
-           
-            <p class="review">For people of all ages who want to learn how to create iOS applications, iOS & Swift - The Complete iOS App Development Bootcamp is a thorough and well</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="rectangle">
-            <img src="./Images/rounded-image.png" alt="Student review" class="rounded-image">
-            <div class="student-info">
-              <h4 class="student-title">Muhammad R.</h4>
-            <div class="rating">
-              <span class="star"><i class="fa-solid fa-star"></i></span>
-              <span class="star"><i class="fa-solid fa-star"></i></span>
-              <span class="star"><i class="fa-solid fa-star"></i></span>
-              <span class="star"><i class="fa-solid fa-star"></i></span>
-              <span class="star pe-1"><i class="fa-regular fa-star-half-stroke"></i></span>
-              <span class="rating-date">3 weeks ago</span>
-            </div>
-           
-            <p class="review">For people of all ages who want to learn how to create iOS applications, iOS & Swift - The Complete iOS App Development Bootcamp is a thorough and well</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="rectangle">
-            <img src="./Images/rounded-image.png" alt="Student review" class="rounded-image">
-            <div class="student-info">
-              <h4 class="student-title">Muhammad R.</h4>
-            <div class="rating">
-              <span class="star"><i class="fa-solid fa-star"></i></span>
-              <span class="star"><i class="fa-solid fa-star"></i></span>
-              <span class="star"><i class="fa-solid fa-star"></i></span>
-              <span class="star"><i class="fa-solid fa-star"></i></span>
-              <span class="star pe-1"><i class="fa-regular fa-star-half-stroke"></i></span>
-              <span class="rating-date">3 weeks ago</span>
-            </div>
-           
-            <p class="review">For people of all ages who want to learn how to create iOS applications, iOS & Swift - The Complete iOS App Development Bootcamp is a thorough and well</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="rectangle">
-            <img src="./Images/rounded-image.png" alt="Student review" class="rounded-image">
-            <div class="student-info">
-              <h4 class="student-title">Muhammad R.</h4>
-            <div class="rating">
-              <span class="star"><i class="fa-solid fa-star"></i></span>
-              <span class="star"><i class="fa-solid fa-star"></i></span>
-              <span class="star"><i class="fa-solid fa-star"></i></span>
-              <span class="star"><i class="fa-solid fa-star"></i></span>
-              <span class="star pe-1"><i class="fa-regular fa-star-half-stroke"></i></span>
-              <span class="rating-date">3 weeks ago</span>
-            </div>
-           
-            <p class="review">For people of all ages who want to learn how to create iOS applications, iOS & Swift - The Complete iOS App Development Bootcamp is a thorough and well</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="rectangle">
-            <img src="./Images/rounded-image.png" alt="Student review" class="rounded-image">
-            <div class="student-info">
-              <h4 class="student-title">Muhammad R.</h4>
-            <div class="rating">
-              <span class="star"><i class="fa-solid fa-star"></i></span>
-              <span class="star"><i class="fa-solid fa-star"></i></span>
-              <span class="star"><i class="fa-solid fa-star"></i></span>
-              <span class="star"><i class="fa-solid fa-star"></i></span>
-              <span class="star pe-1"><i class="fa-regular fa-star-half-stroke"></i></span>
-              <span class="rating-date">3 weeks ago</span>
-            </div>
-           
-            <p class="review">For people of all ages who want to learn how to create iOS applications, iOS & Swift - The Complete iOS App Development Bootcamp is a thorough and well</p>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-  </section>
 
+    <div class="row justify-content-center ">
+      <div class="col-md-4">
+        <div class="rectangle">
+          <img src="./Images/rounded-image.png" alt="Student review" class="rounded-image">
+          <div class="student-info">
+            <h4 class="student-title">Muhammad R.</h4>
+            <div class="rating">
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star pe-1"><i class="fa-regular fa-star-half-stroke"></i></span>
+              <span class="rating-date">3 weeks ago</span>
+            </div>
+
+            <p class="review">For people of all ages who want to learn how to create iOS applications, iOS & Swift - The
+              Complete iOS App Development Bootcamp is a thorough and well</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="rectangle">
+          <img src="./Images/rounded-image.png" alt="Student review" class="rounded-image">
+          <div class="student-info">
+            <h4 class="student-title">Muhammad R.</h4>
+            <div class="rating">
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star pe-1"><i class="fa-regular fa-star-half-stroke"></i></span>
+              <span class="rating-date">3 weeks ago</span>
+            </div>
+
+            <p class="review">For people of all ages who want to learn how to create iOS applications, iOS & Swift - The
+              Complete iOS App Development Bootcamp is a thorough and well</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="rectangle">
+          <img src="./Images/rounded-image.png" alt="Student review" class="rounded-image">
+          <div class="student-info">
+            <h4 class="student-title">Muhammad R.</h4>
+            <div class="rating">
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star pe-1"><i class="fa-regular fa-star-half-stroke"></i></span>
+              <span class="rating-date">3 weeks ago</span>
+            </div>
+
+            <p class="review">For people of all ages who want to learn how to create iOS applications, iOS & Swift - The
+              Complete iOS App Development Bootcamp is a thorough and well</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="rectangle">
+          <img src="./Images/rounded-image.png" alt="Student review" class="rounded-image">
+          <div class="student-info">
+            <h4 class="student-title">Muhammad R.</h4>
+            <div class="rating">
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star pe-1"><i class="fa-regular fa-star-half-stroke"></i></span>
+              <span class="rating-date">3 weeks ago</span>
+            </div>
+
+            <p class="review">For people of all ages who want to learn how to create iOS applications, iOS & Swift - The
+              Complete iOS App Development Bootcamp is a thorough and well</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="rectangle">
+          <img src="./Images/rounded-image.png" alt="Student review" class="rounded-image">
+          <div class="student-info">
+            <h4 class="student-title">Muhammad R.</h4>
+            <div class="rating">
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star pe-1"><i class="fa-regular fa-star-half-stroke"></i></span>
+              <span class="rating-date">3 weeks ago</span>
+            </div>
+
+            <p class="review">For people of all ages who want to learn how to create iOS applications, iOS & Swift - The
+              Complete iOS App Development Bootcamp is a thorough and well</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
 
   <footer id="footer-section" class="bg-black">
     <div class="container">
       <div class="row">
         <div class="col-md-3">
           <div class="logo">
-            <img src="./Images/png-logo 1.png" alt="Logo" >
+            <img src="./Images/png-logo 1.png" alt="Logo">
           </div>
-      
-          <p class="footer-text">Our website to fulfill customer demand by making them satisfied with growing their Knowledge.</p>
+
+          <p class="footer-text">Our website to fulfill customer demand by making them satisfied with growing their
+            Knowledge.</p>
         </div>
         <div class="col-md-3">
           <h4 class=" underline footer-title">About</h4>
           <ul class="footer-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">Categories</a></li>
-          
+
             <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
@@ -527,26 +935,23 @@
         <div class="col-md-3">
           <h4 class=" underline footer-title">Follow Us</h4>
           <ul class="social-media">
-            <li><a href="#"><img src="./Images/camera.png" alt=""></a></li>
-            <li><a href="#"><img src="./Images/twitter.png" alt=""></a></li>
-            <li><a href="#"><img src="./Images/facebook.png" alt=""></a></li>
-            <li><a href="#"><img src="./Images/youtube.png" alt=""></a></li>
+            <li><a href="#"><img src="./Images/camera.png" alt="instagram"></a></li>
+            <li><a href="#"><img src="./Images/twitter.png" alt="twitter"></a></li>
+            <li><a href="#"><img src="./Images/facebook.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="./Images/youtube.png" alt="youtube"></a></li>
           </ul>
         </div>
       </div>
       <div class="language-section">
         <div class="language-rectangle">
-          <a href="">  <img src="./Images/lang.png" alt="Language Icon"> English</a>
-       
+          <a href=""> <img src="./Images/lang.png" alt="Language Icon"> English</a>
+
 
         </div>
       </div>
       <hr class="footer-line">
     </div>
   </footer>
-
-
-
 
   <script src="./JS/bootstrap.bundle.min.js"></script>
 </body>
