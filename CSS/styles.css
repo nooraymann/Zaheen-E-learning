@@ -8,7 +8,8 @@
     font-family: var(--main-font);
     line-height: 118.023%;
 }
-
+a{text-decoration: none;
+color: white;}
 .fontAwesome {
     font-family: 'Helvetica', FontAwesome, sans-serif;
 }
@@ -323,10 +324,7 @@ letter-spacing: -0.24px;
   .footer-links  {
     padding-left: 0;
   }
-  .footer-links a {
-    color: #fff;
-    text-decoration: none;
-  }
+  
 
   .social-media {
     display: flex;
@@ -337,10 +335,6 @@ letter-spacing: -0.24px;
   
   .social-media li {
     margin-right: 10px;
-  }
-  .social-media a {
-    color: #fff;
-    text-decoration: none;
   }
   
   .language-section {
@@ -365,8 +359,7 @@ letter-spacing: -0.24px;
     font-family: var(--secondary-font);
     font-size: 24px;
     font-weight: 600;
-    text-decoration: none;
-    color: white;
+  
   }
   .language-rectangle img{
     margin-right: 10px;
@@ -383,7 +376,6 @@ letter-spacing: -0.24px;
 .slide-colored{
     background-color: #00878F;
     color: white;
-   
     padding: 30px;
     margin: 50px;
 }
@@ -445,21 +437,32 @@ line-height: 118.023%;
     background-color: #00878F;
     border-color: #00878F;
     color: white;
+    padding: 5px 90px;
+    margin-top: 100px;
+  
+font-family: Cairo;
+font-size: 18px;
+
+font-weight: 500;
+line-height: 118.023%; /* 21.244px */
 }
 .instructor-content p{
     font-family: var(--main-font);
     font-size: 22px;
+   
 
     font-weight: 500;
     line-height: 144.023%;
 }
-.instructor-content{
-    padding:0  120px;
+.instructor-content {
+padding: 20px 90px;
+ 
 }
 .bordered-section{
 border-right: 50px solid black;
 border-bottom: 50px solid black;
 }
+
 @media (max-width: 768px) {
     .headTitle {
         font-size: 28px;
