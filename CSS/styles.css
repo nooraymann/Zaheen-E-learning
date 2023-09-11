@@ -203,6 +203,7 @@ a {
 }
 
 .slide-colored {
+  position: relative;
   background-color: var(--main-color);
   color: white;
   padding: 30px;
@@ -257,13 +258,19 @@ a {
   font-size: 22px;
   font-weight: 700;
   line-height: 118.023%;
+  padding-top:30px ;
 }
-
+.image-container{
+  position: absolute;
+  right: 30px;
+}
 .instuctor-subtitle {
   font-family: var(--main-font);
   font-size: 16px;
   font-weight: 600;
   line-height: 118.023%;
+ width: 50%;
+ margin-bottom: 20px;
 }
 
 .instructor-button {
